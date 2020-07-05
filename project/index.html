@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>MMS Exchange for all currency</title>
+    <meta name="title" content="MMS Exchange for all currency">
+    <meta name="description" content="Here you can change currency value easily !">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mmsit.com/">
+    <meta property="og:title" content="MMS Exchange for all currency">
+    <meta property="og:description" content="Here you can change currency value easily !">
+    <meta property="og:image" content="img/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mmsit.com/">
+    <meta property="twitter:title" content="MMS Exchange for all currency">
+    <meta property="twitter:description" content="Here you can change currency value easily !">
+    <meta property="twitter:image" content="img/logo.png">
+    <title>MMEx</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.min.css">
+</head>
+
+<body>
+
+    <section class="app">
+        <section class="head">
+            <div class="logo-container">
+                <img class="logo" src="img/logo.png" alt="no photo found!">
+                <p class="name">MMEx</p>
+            </div>
+            <div class="result-container">
+                <p class="result-box" id="result">00.0</p>
+            </div>
+        </section>
+        <div class="divider"></div>
+        <form class="middle" id="form">
+            <div class="input-container ">
+                <label>Amount</label>
+                <input type="number" class="input" id="input" placeholder="00.0" autofocus min="1" required>
+            </div>
+            <div class="from-container ">
+                <label>From</label>
+                <select class="from" name="from" id="from" required>
+                    <option value="" selected>Select Currency</option>
+                </select>
+            </div>
+            <div class="to-container ">
+                <label>To</label>
+                <select class="to" name="to" id="to" required></select>
+            </div>
+            <button class="calculate" id="calculate">Calculate</button>
+        </form>
+
+        <div class="rec">
+            <table id="tbRec">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Result</th>
+                        <th><i class="fa fa-trash-alt"></i></th>
+                    </tr>
+                </thead>
+                <tbody id="tbd">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
+
+</html>
